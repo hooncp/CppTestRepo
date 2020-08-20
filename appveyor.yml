@@ -1,0 +1,18 @@
+# Version format
+version: 1.0.{build}
+
+# Build worker image
+image: Visual Studio 2019
+
+# Build platform
+platform: Any CPU
+
+# Build Configuration
+configuration: Debug
+
+# MSBuild settings
+build:
+  project: Team00\Code00\StartupSPASolution.sln
+  verbosity: quiet
+
+# Omitted the tests, as they are not relevant for the question
