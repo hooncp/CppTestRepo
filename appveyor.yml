@@ -9,6 +9,7 @@ configuration: Debug
 
 install:
   - set QTDIR=C:\Qt\5.14.2\msvc2017
+  - set PATH=%PATH%;%QTDIR%\bin;
 
 # MSBuild settings
 build:
