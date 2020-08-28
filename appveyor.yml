@@ -5,10 +5,11 @@ version: 1.0.{build}
 image: Visual Studio 2019
 
 # Build Configuration
+configuration:
+  - Debug
+  - Release
 platform:
   - Win32
-  
-configuration: Debug
 
 install:
   - set QTDIR=C:\Qt\5.14.2\msvc2017
