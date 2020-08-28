@@ -9,6 +9,5 @@ using namespace std;
 #include "TNode.h"
 
 int Parse () {
-
 	return 0;
 }
