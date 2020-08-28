@@ -5,6 +5,9 @@ version: 1.0.{build}
 image: Visual Studio 2019
 
 # Build Configuration
+platform:
+  - x64
+  
 configuration: Debug
 
 install:
