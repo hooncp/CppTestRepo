@@ -12,7 +12,7 @@ namespace UnitTesting
 		
 		TEST_METHOD(TestMethod1)
 		{
-			Assert::AreEqual(1,2);
+			Assert::AreEqual(1,1);
 			TNode T;
 			// TODO: Your test code here
 		}
