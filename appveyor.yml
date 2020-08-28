@@ -4,20 +4,11 @@ version: 1.0.{build}
 # Build worker image
 image: Visual Studio 2019
 
-# Build Configuration
-configuration:
-  - Debug
-  - Release
-platform:
-  - Win32
-
 install:
   - set QTDIR=C:\Qt\5.14.2\msvc2017
   - set PATH=%PATH%;%QTDIR%\bin;
 
-# MSBuild settings
-build:
-  project: Team00\Code00\StartupSPASolution.sln
-  verbosity: quiet
+build_script:
+  - MSBuild.exe Team00\Code00\StartupSPASolution.sln /p:Configuration=Debug /p:Platform="Win32"
 
 # Omitted the tests, as they are not relevant for the question
