@@ -6,7 +6,7 @@ image: Visual Studio 2019
 
 # Build Configuration
 platform:
-  - x64
+  - Win32
   
 configuration: Debug
 
