@@ -12,12 +12,8 @@ build_script:
   - MSBuild.exe Team00\Code00\StartupSPASolution.sln /p:Configuration=Debug /p:Platform="Win32"
 
 # Omitted the tests, as they are not relevant for the question
-test:
-  assemblies:
-    only:
-      - UnitTesting.dll
-      - IntegrationTesting.dll
       
 test_script:
   - echo Running UnitTesting
-  - vstest.console /logger:Appveyor <assembly>
+  - vstest.console /logger:Appveyor Team00\Code00\Debug\UnitTesting.dll
+  - vstest.console /logger:Appveyor Team00\Code00\Debug\IntegrationTesting.dll
