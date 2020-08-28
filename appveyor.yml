@@ -16,4 +16,4 @@ build_script:
 test_script:
   - echo Running UnitTesting
   - vstest.console /logger:Appveyor Team00\Code00\Debug\UnitTesting.dll
-  - vstest.console /logger:Appveyor Team00\Code00\Debug\IntegrationTesting.dl
+  - vstest.console /logger:Appveyor Team00\Code00\Debug\IntegrationTesting.dll
