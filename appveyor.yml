@@ -10,7 +10,7 @@ configuration: Debug
 install:
   - set QTDIR=C:\Qt\5.14.2\msvc2017
   - set PATH=%PATH%;%QTDIR%\bin;
-  - call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars32.bat"
+  - call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars32.bat"
 
 
 # MSBuild settings
