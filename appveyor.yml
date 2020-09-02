@@ -7,6 +7,7 @@ image: Visual Studio 2019
 install:
   - set QTDIR=C:\Qt\5.14.2\msvc2017
   - echo $QTDIR$
+  - set QtMsBuild=%LOCALAPPDATA%\QtMsBuild
   - set PATH=%PATH%;%QTDIR%\bin;
 
 build_script:
